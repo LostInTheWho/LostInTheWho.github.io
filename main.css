@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Inter&family=Lato&family=Mukta&family=Nunito&family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(25, 25, 25, .9);
+    position: fixed;
+    left: -110vw;
+    transition: all 650ms;
+}
+
+body {
+    background: #333;
+}
+
+.nav-list {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-direction: column;
+}
+
+.nav-link {
+    padding: 2.5rem 0;
+}
+
+.nav-link a {
+    font-size: 2.5rem;
+    font-family: "Inter";
+    color: #eee;
+    text-decoration: none;
+}
+
+.nav-brand img {
+    width: 250px;
+}
+
+.nav-brand {
+    position: relative;
+    left: -210vw;
+    transition: all 1500ms;
+}
+
+.nav-brand.active {
+    left: 0;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem 0;
+}
+
+.title h2 {
+    color: #eee;
+    font-size: 3rem;
+    font-family: Mukta;
+    border-bottom: #fff 3.5px solid;
+}
+
+/* hero */
+
+.hero {
+    width: 100vw;
+    height: 76vh;
+    background: url('/images/hero-bg.png') center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    width: 350px;
+}
+
+/* blog */
+
+.blog-list {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+.blog-item {
+    padding: 2.5rem 0;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto Slab";
+}
+
+.blog-item img {
+    width: 250px;
+    object-fit: cover;
+}
+
+.blog-item h4 {
+    padding: 1.5rem 0;
+    color: #eee;
+}
+
+.blog-item a {
+    font-size: 1.8rem;
+    color: #ddd;
+}
+
+/* post */
+
+.posts {
+    padding: 10rem 0;
+}
+
+.latest-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.latest-post a {
+    font-family: "Roboto Slab";
+    padding: 2.5rem 0;
+    font-size: 2rem;
+    color: #ddd;
+}
+
+/* contact */
+
+.contact {
+    width: 100vw;
+    background: #eee;
+}
+
+.contact .title h2 {
+    color: #222;
+    border-bottom: #333 3.5px solid;
+}
+
+.contact p {
+    font-family: "Roboto Slab";
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 2.5rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.social-media {
+    font-size: 2rem;
+    font-family: "Mukta";
+    padding: 1rem;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0;
+    list-style: none;
+}
+
+.footer-link {
+    padding: 0 1.5rem;
+}
+
+.footer-link a {
+    font-size: 1.5rem;
+    font-family: Roboto Slab;
+    text-decoration: none;
+    color: #333;
+}
+
+a.current {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 1000px) {
+    .menu-icon {
+        display: none;
+    }
+    header {
+        left: 0;
+        height: 8rem;
+    }
+    .nav-list {
+        flex-direction: row;
+        height: 8rem;
+    }
+    .nav-link {
+        padding: 0 5rem;
+    }
+    .nav-link a {
+        font-size: 2rem;
+    }
+    .nav-brand img {
+        width: 100px;
+    }
+    .blog-list {
+        flex-direction: row;
+    }
+    .blog-item {
+        padding: 2.5rem;
+    }
+    .contact p {
+        margin: 0 45rem;
+    }
+}
