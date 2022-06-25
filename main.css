@@ -116,8 +116,14 @@ body {
 }
 
 .blog-item h4 {
-    padding: 1.5rem 0;
+    padding: 1.5rem 0 .5rem 0;
     color: #eee;
+}
+
+.blog-item h3 {
+    padding: 0 0 1.5rem 0;
+    color: #eee;
+    font-size: 1.5rem;
 }
 
 .blog-item a {
