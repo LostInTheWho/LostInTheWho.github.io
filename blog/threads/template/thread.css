@@ -33,6 +33,11 @@ body {
     font-size: 1.5rem;
 }
 
+.thread-title h3 {
+    font-weight: 200;
+    
+}
+
 .thread-body {
     margin: 1.5rem;
 }
