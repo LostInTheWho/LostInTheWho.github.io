@@ -98,6 +98,10 @@ main {
 
 /* blog */
 
+.blog {
+    background: #333;
+}
+
 .blog-list {
     width: 100vw;
     display: flex;
