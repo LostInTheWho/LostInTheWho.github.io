@@ -5,17 +5,13 @@ body {
 
 /* thread */
 
-img {
-    width: 100px;
-}
-
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100%;
-    padding-top: 10vh;
+    padding: 10vh 0 5rem 0;
 }
 
 .thread {
@@ -34,10 +30,66 @@ img {
 .thread-title h4 {
     font-weight: 200;
     color: #555;
+    font-size: 1.5rem;
 }
 
 .thread-body {
     margin: 1.5rem;
+}
+
+.thread-section {
+    font-family: "Nunito";
+    font-size: 1.5rem;
+}
+
+.thread-section p {
+    padding-bottom: 2.5rem;
+}
+
+.thread-section ul,
+.thread-section ol {
+    padding: 0 0 2.5rem 2.5rem;
+    font-size: 1.8rem;
+}
+
+.thread-section h2,
+.thread-section h3,
+.thread-section h4 {
+    font-size: 3rem;
+    font-family: "Mukta";
+    text-decoration: underline;
+    text-decoration-thickness: 2.5px;
+    margin: 1rem 0;
+    font-weight: 600;
+    color: #202020;
+}
+
+.thread-section h3 {
+    font-size: 2.5rem;
+}
+
+.thread-section h4 {
+    font-size: 2rem;
+}
+
+.thread-section .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.5rem;
+}
+
+.thread-section img {
+    width: 80%;
+    object-fit: cover;
+}
+
+.thread-section a {
+    color: #222;
+}
+
+.thread-section a:visited {
+    color: #777;
 }
 
 .thread-section > h2:first-child {
@@ -63,4 +115,13 @@ img {
     font-family: "Mukta";
     color: #555;
     font-weight: 200;
+}
+
+@media only screen and (min-width: 1025px) {
+    .container {
+        padding: 18vh 0 5rem 0;
+    }
+    .thread {
+        width: 55vw;
+    }
 }
