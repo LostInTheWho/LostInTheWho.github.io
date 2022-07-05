@@ -123,6 +123,7 @@ main {
 
 .blog-item img {
     width: 250px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -153,6 +154,12 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.latest-post img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
 .latest-post a {
